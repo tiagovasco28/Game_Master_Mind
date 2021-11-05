@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<script src="JS/javascript.js"></script>
+    	<link rel="stylesheet" href="CSS/Style.css">
+    	<title>Master Mind Game</title>
+    </head>
+
+    <body>
+    	<section>
+        <audio controls> <source src="./audio/musica_suspenso.mp3" type="audio/mpeg"> </audio>
+    		<h2 id="titulosection">MainSection</h2>
+    		<h1 class="titulo" >¡ Bienvenido al juego MasterMind ! </h1>
+    		<h2 class="titulo"> Intente adivinar los numeros secretos (*) </h2>
+    		<h2 class="titulo"> insertar una secuencia de cinco numeros del (1 al 3)</h2>
+
+    		<div class="contenedor">
+
+    			<div class="contenido">
+    				<h2 id="asterisco1"> * </h2>
+    			</div>
+
+    			<div class="contenido">
+    				<h2 id="asterisco2"> * </h2>
+    			</div>
+
+    			<div class="contenido">
+    				<h2 id="asterisco3"> * </h2>
+    			</div>
+
+    			<div class="contenido">
+    				<h2 id="asterisco4"> * </h2>
+    			</div>
+
+    			<div class="contenido">
+    				<h2 id="asterisco5"> * </h2>
+    			</div>
+
+    		</div>
+
+    		<div class="ejecutables">
+    			<div id="cajatexto">
+    				<h2> Inserte la combinación: </h2>
+    				<input type="text" id="valor">
+    			</div>
+
+    			<div class="botones">
+    				<input id="jugar" type="submit" value="Jugar" onclick="capturar(),comparar()" />
+    				<input id="reiniciar" type="submit" value="Reiniciar" onclick="location.reload()">
+    				<input id="combin" type="submit" value="Ver Combinacion" onclick="combinacion()" >
+    				<input id="rendir" type="submit" value="Rendirse" onclick= "salida()"/>
+    				<p >Numero Insertado </p>
+    				<p id="valordigitado">* * * * * </p>
+    				<p id="combinacion"> </p>
+    			</div>
+    		</div>
+    	</section>
+
+    </body>
+    </html>
